@@ -1,0 +1,15 @@
+version: '2'
+services:
+  coffee_catalogue_service:
+    build: ./coffee-catalogue-service
+    container_name: coffee_catalogue_service
+    ports:
+     - "8123:8123"
+    links:
+      - db:db
+    depends_on:
+     - db
+    environment:
+     - DATABASE_HOST=db
+  db:
+    build: ./db

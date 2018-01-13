@@ -1,0 +1,25 @@
+{
+  "name": "coffee-catalogue-service",
+  "version": "1.0.0",
+  "description": "Coffee products catalogue service",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "debug": "node-debug index.js",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "coffee",
+    "docker",
+    "node",
+    "express"
+  ],
+  "author": "branislav.majernik@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.2",
+    "helmet": "^3.9.0",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0"
+  }
+}
